@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <title>Fuel flow analysis</title>  
+
+<link href="./main.d8e0d294.css" rel="stylesheet"></head>
+
+ <div class="container">
+   <div class="row">
+     <div class="col-xs-12">
+
+        <div class="card">
+          <div class="card-block">
+            <h2>UBC Formula Electric</h2>
+          During the past semester I've been pretty involved with the University of British Columbia's Formula Electric Team, helping develop the electrical side of the racecar. It's an excellent team and I've learned a lot. A link to the design team's site can be found <u><b><a style="color:black" href="https://www.ubcformulaelectric.com/">here</a></b></u>, and here are some pictures of the car itself:
+          <br><br>
+  <img src="./assets/images/formulaelectriccar.png" width="400">
+  <img src="./assets/images/formulaelectriccar.jfif" width="400">
+  <br>
+
+
+  <br>I first joined the firmware team, and started writing C code for the STM32 microcontrollers which control the board. There are at least 8 PCB boards (I lost count now), and each has a STM32 microcontroller performing all the main functionality.<br>
+<br><br>
+  <h4>My Role in Software</h4>
+
+<img src="./assets/images/dcmcode.jpg" width="400">
+<br>
+  The microcontrollers run a real-time operating system (FreeRTOS), and use a state machine architecture to allow for multiple tasks to be executed at once. My role was writing firmware for the DCM (Drive Control Module), which was responsible for reading in signals from the accelerator pedal and sending torque requests over CAN to the inverter, which in turn controlled the induction motors. This code was written in C and used HAL (Hardware Abstraction Library) to communicate with the GPIO pins. To configure the microcontroller I used the STMCubeMX IDE, along with CLion for development.
+<br>
+To see the code I wrote, check out my fork of the repository <b><u><a href="https://github.com/alxshev/Consolidated-Firmware2" style="color:black">here</a></b></u>. And to see some real time collaboration work (aka my code being torn apart by people who know much more) click 
+  <h6>Collaboration</h6>
+  The firmware team has about 5 people. Collaboration is done using the Git forking workflow, and pull requests are vigorously torn apart by all members of the team (to see an instance of this look at the pull request I made <b><a style="color:black" href="https://github.com/UBCFormulaElectric/Consolidated-Firmware/pull/678">here</a></b>)
+  <br><br>
+  <h4>My Role in Hardware</h4>
+  Lately I've also became involved with developing hardware for the board, and redesigning the PCB (boards are done in Altium). Currently I am working on swapping the current microcontroller for a more powerful one, and adding another CAN bus for direct communciation with the inverter. Here's what the PCB looks like right now:
+<br>
+<img src="./assets/images/dcm.jpg" width="400">
+
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
