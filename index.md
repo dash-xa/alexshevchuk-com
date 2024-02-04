@@ -2,7 +2,6 @@
 layout: page
 title: Personal Website
 ---
-
 Intro paragraph
 
 Areas of interest
