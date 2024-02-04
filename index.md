@@ -1,4 +1,7 @@
-# Personal website
+---
+layout: page
+title: Personal Website
+---
 
 Intro paragraph
 
